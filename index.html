@@ -39,13 +39,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">LeafSearch</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+         
+		 <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Recognition</a></li>
+           <!-- <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -57,13 +58,13 @@
                 <li><a href="#">Separated link</a></li>
                 <li><a href="#">One more separated link</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-          </ul>
+            <li><a href="../navbar/">About this project</a></li>
+            <!--<li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+          </ul> 
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -72,24 +73,258 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
+        <h2>Welcome to LeafSearch!</h2>
+        <p>Please answer the following questions regarding the leaf you are searching for. The system will automatically eliminate unsuitable leaf families.</p>
+        <!-- <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+        </p> -->
       </div>
 
-    </div> <!-- /container -->
+	</div> <!-- /container -->
+	
+	
+	
+	
+	<div class ="row">
+		<div class="col-md-offset-2 col-md-5" id="questions">
+		
+		<div class="question panel panel-success" id="q9" hidden>
+			<div class=" panel-heading">En tepede leaflet ?</div>
+			<div class=" panel-body" id="q9radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="1">
+			   Yes
+			  </label>
 
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="3">
+				N/A
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="0">
+				?
+			</div>
+		</div>
+		
+			<div class="question panel panel-success" id="q8" hidden>
+			<div class=" panel-heading">Leaflets karşılıklı ?</div>
+				<div class=" panel-body" id="q8radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q8radio" value="1">
+			   Yes
+			  </label>
 
+			  <label class ="radio-inline">
+				<input type="radio" name="q8radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q8radio" value="0">
+				?
+			</div>
+		</div>
+		
+		
+		<div class="question panel panel-success" id="q7" hidden>
+			<div class=" panel-heading">Yüzey tüylü gibi ?</div>
+				<div class=" panel-body" id="q7radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q7radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q7radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q7radio" value="0">
+				?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q6" hidden>
+			<div class=" panel-heading">Slanted tips?</div>
+			<div class=" panel-body" id="q6radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q6radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q6radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q6radio" value="0">
+				?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q5" hidden>
+			<div class=" panel-heading">Parlak?</div>
+			<div class=" panel-body" id="q5radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="1">
+			   Az
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="2">
+			   Orta
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="3">
+				Çok
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="4">
+				N
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="0">
+				?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q4" hidden>
+			<div class=" panel-heading">Damar Karşılıklı?</div>
+			<div class=" panel-body" id="q4radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q4radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q4radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q4radio" value="0">
+				?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q3" hidden >
+			<div class=" panel-heading">Damar?</div>
+			<div class=" panel-body" id="q3radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="1">
+			   Az
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="2">
+			   Orta
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="3">
+				Çok
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="0">
+				?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q2" hidden>
+			<div class=" panel-heading">Serrated Leaves? </div>
+			<div class=" panel-body" id="q2radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="3">
+				Az
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="0">
+				?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q1">
+			<div class=" panel-heading">Simple/Maple/Leaflets?</div>
+			<div class=" panel-body" id="q1radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="1">
+			   Simple
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="2">
+			   Maple
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="3">
+				Leaflets
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="0">
+				?
+			</div>
+		</div>
+		
+		
+		
+		
+		</div>
+		
+		<div class ="col-md-3">
+		
+		<div class=" panel panel-warning"><center><br><br>pictures!<br><br><br><br></center>
+		</div>
+		</div>
+		
+	</div>
+	
+	
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+   
+   
+   <script>
+  // var filterDay = $('#filterDay input:radio:checked').val()
+	
+	$('#q9radios input[type=radio]').change( function() {   leaf();    });
+	
+	$('#q8radios input[type=radio]').change( function() {   newQuestion("#q9","#q8");    });
+	$('#q7radios input[type=radio]').change( function() {   newQuestion("#q8","#q7");    });
+	$('#q6radios input[type=radio]').change( function() {   newQuestion("#q7","#q6");    });
+	$('#q5radios input[type=radio]').change( function() {   newQuestion("#q6","#q5");    });
+	$('#q4radios input[type=radio]').change( function() {   newQuestion("#q5","#q4");    });
+	$('#q3radios input[type=radio]').change( function() {   newQuestion("#q4","#q3");    });
+	$('#q2radios input[type=radio]').change( function() {   newQuestion("#q3","#q2");    });
+	$('#q1radios input[type=radio]').change( function() {   newQuestion("#q2","#q1");    });
+	
+	function newQuestion(a, b)
+	{
+	$(a).slideDown(500);
+	$(b).fadeTo(500, 0.65);
+	}
+	
+	function leaf()
+	{
+	}
+   </script>
   </body>
 </html>
