@@ -86,7 +86,7 @@
 	
 	
 	<div class ="row">
-		<div class="col-md-offset-2 col-md-5" id="questions">
+		<div class="col-md-offset-2 col-md-4" id="questions">
 		
 		<div class="question panel panel-success" id="q9" hidden>
 			<div class=" panel-heading">En tepede leaflet ?</div>
@@ -280,10 +280,16 @@
 		
 		</div>
 		
-		<div class ="col-md-3">
+		<div class ="col-md-4 col-md-offset-1">
 		
-		<div class=" panel panel-warning"><center><br><br>pictures!<br><br><br><br></center>
+		<div class=" panel panel-warning"><center><br><br>picture here<br><br><br><br>
+		
+		<h3 id="foundleaf"></h3>
+		
+		</center>
+		
 		</div>
+		
 		</div>
 		
 	</div>
@@ -324,7 +330,231 @@
 	
 	function leaf()
 	{
+		var result =  $("#q1 :checked").val() + $("#q2 :checked").val() + $("#q3 :checked").val()
+					+ $("#q4 :checked").val() + $("#q5 :checked").val() + $("#q6 :checked").val() 
+					+ $("#q7 :checked").val() + $("#q8 :checked").val() + $("#q9 :checked").val() ;
+				
+
+					if(result=="310040211")    $("#foundleaf").text("Sambucus ebulus L.");
+else if(result=="312241211")    $("#foundleaf").text("Sambucus nigra L.");
+else if(result=="000000200")    $("#foundleaf").text("Sambucus racemosa L.");
+else if(result=="113142223")    $("#foundleaf").text("Viburnum lantana L.");
+else if(result=="223221222")    $("#foundleaf").text("Viburnum opulus L.");
+else if(result=="133242200")    $("#foundleaf").text("Viburnum rhytidophyllum Hemsl. ex F.B.Forbes & Hemsl.");
+else if(result=="122221223")    $("#foundleaf").text("Viburnum tinus L.");
+else if(result=="213212223")    $("#foundleaf").text("Liquidambar styraciflua L.");
+else if(result=="123211222")    $("#foundleaf").text("Amaranthus deflexus L.");
+else if(result=="221231222")    $("#foundleaf").text("Atriplex prostrata Boucher ex DC.");
+else if(result=="123131222")    $("#foundleaf").text("Beta vulgaris L.");
+else if(result=="121112222")    $("#foundleaf").text("Chenopodium album L.");
+else if(result=="121221222")    $("#foundleaf").text("Allium ursinum L.");
+else if(result=="121211222")    $("#foundleaf").text("Galanthus nivalis L.");
+else if(result=="123112222")    $("#foundleaf").text("Cotinus coggygria Scop.");
+else if(result=="321122212")    $("#foundleaf").text("Pistacia lentiscus L.");
+else if(result=="323231211")    $("#foundleaf").text("Pistacia terebinthus L.");
+else if(result=="313121211")    $("#foundleaf").text("Rhus coriaria L.");
+else if(result=="313231211")    $("#foundleaf").text("Rhus typhina L.");
+else if(result=="213121222")    $("#foundleaf").text("Aegopodium podagraria L.");
+else if(result=="311211211")    $("#foundleaf").text("Anthriscus sylvestris (L.) Hoffm.");
+else if(result=="211221222")    $("#foundleaf").text("Astrantia minor L.");
+else if(result=="321112221")    $("#foundleaf").text("Bupleurum fruticosum L.");
+else if(result=="311221211")    $("#foundleaf").text("Daucus carota L.");
+else if(result=="311122211")    $("#foundleaf").text("Pastinaca sativa L.");
+else if(result=="313131211")    $("#foundleaf").text("Smyrnium olusatrum L.");
+else if(result=="321211211")    $("#foundleaf").text("Nerium oleander L.");
+else if(result=="121121222")    $("#foundleaf").text("Vinca major L.");
+else if(result=="111131222")    $("#foundleaf").text("Ilex aquifolium L.");
+else if(result=="123131222")    $("#foundleaf").text("Arum italicum Mill.");
+else if(result=="123111222")    $("#foundleaf").text("Dracunculus vulgaris Schott");
+else if(result=="223121222")    $("#foundleaf").text("Hedera helix L.");
+else if(result=="122122222")    $("#foundleaf").text("Aristolochia clematitis L.");
+else if(result=="321221221")    $("#foundleaf").text("Ruscus aculeatus L.");
+else if(result=="121131222")    $("#foundleaf").text("Asplenium scolopendrium L.");
+else if(result=="321222211")    $("#foundleaf").text("Asplenium trichomanes L.");
+else if(result=="321112211")    $("#foundleaf").text("Ambrosia artemisiifolia L.");
+else if(result=="321211211")    $("#foundleaf").text("Anacyclus clavatus (Desf.) Pers.");
+else if(result=="311221221")    $("#foundleaf").text("Anthemis maritima L.");
+else if(result=="221111222")    $("#foundleaf").text("Artemisia vulgaris L.");
+else if(result=="112111222")    $("#foundleaf").text("Bidens pilosa L.");
+else if(result=="121211222")    $("#foundleaf").text("Calendula arvensis L.");
+else if(result=="313131211")    $("#foundleaf").text("Carduus acanthoides L.");
+else if(result=="121111122")    $("#foundleaf").text("Centaurea aspera L.");
+else if(result=="311111121")    $("#foundleaf").text("Centaurea calcitrapa L.");
+else if(result=="313211211")    $("#foundleaf").text("Centaurea scabiosa L.");
+else if(result=="111131222")    $("#foundleaf").text("Cichorium intybus L.");
+else if(result=="111211122")    $("#foundleaf").text("Cirsium arvense (L.) Scop.");
+else if(result=="312111121")    $("#foundleaf").text("Crepis bursifolia L.");
+else if(result=="321111211")    $("#foundleaf").text("Crepis capillaris (L.) Wallr.");
+else if(result=="111231222")    $("#foundleaf").text("Erigeron canadensis L.");
+else if(result=="121131222")    $("#foundleaf").text("Erigeron karvinskianus DC.");
+else if(result=="112131222")    $("#foundleaf").text("Eupatorium cannabinum L.");
+else if(result=="311131211")    $("#foundleaf").text("Galactites tomentosus Moench");
+else if(result=="113222122")    $("#foundleaf").text("Helminthotheca echioides (L.) Holub");
+else if(result=="213132222")    $("#foundleaf").text("Homogyne alpina (L.) Cass.");
+else if(result=="321122111")    $("#foundleaf").text("Hypochaeris radicata L.");
+else if(result=="323222211")    $("#foundleaf").text("Jacobaea erucifolia (L.) P.Gaertn., B.Mey. & Scherb.");
+else if(result=="313212211")    $("#foundleaf").text("Jacobaea vulgaris Gaertn.");
+else if(result=="313111221")    $("#foundleaf").text("Lactuca serriola L.");
+else if(result=="311212121")    $("#foundleaf").text("Lactuca viminea (L.) J.Presl & C.Presl");
+else if(result=="111221122")    $("#foundleaf").text("Leontodon hispidus L.");
+else if(result=="311212111")    $("#foundleaf").text("Leucanthemum vulgare Lam.");
+else if(result=="223122222")    $("#foundleaf").text("Petasites pyrenaicus (L.) G.López");
+else if(result=="121121122")    $("#foundleaf").text("Pilosella officinarum F.W.Schultz & Sch.Bip.");
+else if(result=="111231122")    $("#foundleaf").text("Scorzoneroides pyrenaica (Gouan) Holub");
+else if(result=="111121122")    $("#foundleaf").text("Senecio vulgaris L.");
+else if(result=="113231222")    $("#foundleaf").text("Sonchus asper (L.) Hill");
+else if(result=="112121222")    $("#foundleaf").text("Sonchus tenerrimus L.");
+else if(result=="311111211")    $("#foundleaf").text("Tanacetum vulgare L.");
+else if(result=="311221221")    $("#foundleaf").text("Taraxacum campylodes G.E.Haglund");
+else if(result=="121111222")    $("#foundleaf").text("Tragopogon pratensis L.");
+else if(result=="311211221")    $("#foundleaf").text("Tripleurospermum inodorum Sch.Bip.");
+else if(result=="212132222")    $("#foundleaf").text("Tussilago farfara L.");
+else if(result=="113121222")    $("#foundleaf").text("Impatiens glandulifera Royle");
+else if(result=="113231122")    $("#foundleaf").text("Alnus alnobetula (Ehrh.) K.Koch");
+else if(result=="123131222")    $("#foundleaf").text("Alnus cordata (Loisel.) Duby");
+else if(result=="113132222")    $("#foundleaf").text("Alnus glutinosa (L.) Gaertn.");
+else if(result=="113131122")    $("#foundleaf").text("Betula pendula Roth");
+else if(result=="113131122")    $("#foundleaf").text("Betula pubescens Ehrh.");
+else if(result=="113121222")    $("#foundleaf").text("Betula utilis D.Don");
+else if(result=="113131222")    $("#foundleaf").text("Carpinus betulus L.");
+else if(result=="113231222")    $("#foundleaf").text("Corylus avellana L.");
+else if(result=="113121122")    $("#foundleaf").text("Ostrya carpinifolia Scop.");
+else if(result=="123211222")    $("#foundleaf").text("Catalpa bignonioides Walter");
+else if(result=="113111122")    $("#foundleaf").text("Borago officinalis L.");
+else if(result=="321231221")    $("#foundleaf").text("Lithodora fruticosa (L.) Griseb.");
+else if(result=="121222122")    $("#foundleaf").text("Myosotis arvensis Hill");
+else if(result=="321211111")    $("#foundleaf").text("Phacelia tanacetifolia Benth.");
+else if(result=="123211222")    $("#foundleaf").text("Symphytum officinale L.");
+else if(result=="113132222")    $("#foundleaf").text("Barbarea vulgaris R.Br.");
+else if(result=="111112222")    $("#foundleaf").text("Cakile maritima Scop.");
+else if(result=="321212222")    $("#foundleaf").text("Capsella bursa-pastoris (L.) Medik.");
+else if(result=="321122211")    $("#foundleaf").text("Cardamine amara L.");
+else if(result=="321112111")    $("#foundleaf").text("Cardamine pratensis L.");
+else if(result=="311111211")    $("#foundleaf").text("Diplotaxis erucoides (L.) DC.");
+else if(result=="311111211")    $("#foundleaf").text("Diplotaxis tenuifolia (L.) DC.");
+else if(result=="111231122")    $("#foundleaf").text("Draba verna L.");
+else if(result=="113131222")    $("#foundleaf").text("Lunaria annua L.");
+else if(result=="212110222")    $("#foundleaf").text("Sinapis arvensis L.");
+else if(result=="121111222")    $("#foundleaf").text("Sisymbrium irio L.");
+else if(result=="111111222")    $("#foundleaf").text("Sisymbrium officinale (L.) Scop.");
+else if(result=="121232222")    $("#foundleaf").text("Buxus sempervirens L.");
+else if(result=="113121222")    $("#foundleaf").text("Celtis australis L.");
+else if(result=="112111222")    $("#foundleaf").text("Humulus lupulus L.");
+else if(result=="122211222")    $("#foundleaf").text("Capparis spinosa L.");
+else if(result=="121121222")    $("#foundleaf").text("Centranthus ruber (L.) DC.");
+else if(result=="321221211")    $("#foundleaf").text("Knautia arvensis (L.) Coult.");
+else if(result=="112212222")    $("#foundleaf").text("Scabiosa atropurpurea L.");
+else if(result=="121211222")    $("#foundleaf").text("Silene latifolia Poir.");
+else if(result=="112121222")    $("#foundleaf").text("Euonymus europaeus L.");
+else if(result=="123212122")    $("#foundleaf").text("Cistus albidus L.");
+else if(result=="112221122")    $("#foundleaf").text("Convolvulus althaeoides L.");
+else if(result=="123212222")    $("#foundleaf").text("Convolvulus arvensis L.");
+else if(result=="122231222")    $("#foundleaf").text("Cornus mas L.");
+else if(result=="122121222")    $("#foundleaf").text("Cornus sanguinea L.");
+else if(result=="223121222")    $("#foundleaf").text("Bryonia cretica L.");
+else if(result=="121231222")    $("#foundleaf").text("Juniperus communis L.");
+else if(result=="121231222")    $("#foundleaf").text("Juniperus oxycedrus L.");
+else if(result=="311211221")    $("#foundleaf").text("Pteridium aquilinum (L.) Kuhn");
+else if(result=="311111211")    $("#foundleaf").text("Dryopteris filix-mas (L.) Schott");
+else if(result=="311221221")    $("#foundleaf").text("Polystichum setiferum (Forssk.) T.Moore ex Woyn.");
+else if(result=="123221222")    $("#foundleaf").text("Diospyros kaki L.f.");
+else if(result=="121111122")    $("#foundleaf").text("Elaeagnus angustifolia L.");
+else if(result=="321212212")    $("#foundleaf").text("Ephedra distachya L.");
+else if(result=="112111222")    $("#foundleaf").text("Arbutus unedo L.");
+else if(result=="121211222")    $("#foundleaf").text("Euphorbia characias L.");
+else if(result=="112221122")    $("#foundleaf").text("Mercurialis annua L.");
+else if(result=="321212211")    $("#foundleaf").text("Acacia dealbata Link");
+else if(result=="321212212")    $("#foundleaf").text("Albizia julibrissin Durazz.");
+else if(result=="321111211")    $("#foundleaf").text("Amorpha fruticosa L.");
+else if(result=="321111211")    $("#foundleaf").text("Astragalus monspessulanus L.");
+else if(result=="122131222")    $("#foundleaf").text("Bituminaria bituminosa (L.) C.H.Stirt.");
+else if(result=="112132222")    $("#foundleaf").text("Ceratonia siliqua L.");
+else if(result=="123221222")    $("#foundleaf").text("Cercis siliquastrum L.");
+else if(result=="122112222")    $("#foundleaf").text("Colutea arborescens L.");
+else if(result=="121112222")    $("#foundleaf").text("Coronilla valentina L.");
+else if(result=="321131212")    $("#foundleaf").text("Gleditsia triacanthos L.");
+else if(result=="121112222")    $("#foundleaf").text("Laburnum anagyroides Medik.");
+else if(result=="121211222")    $("#foundleaf").text("Lathyrus cicera L.");
+else if(result=="121211222")    $("#foundleaf").text("Lathyrus latifolius L.");
+else if(result=="121212222")    $("#foundleaf").text("Lotus corniculatus L.");
+else if(result=="121211122")    $("#foundleaf").text("Medicago arborea L.");
+else if(result=="121211122")    $("#foundleaf").text("Medicago lupulina L.");
+else if(result=="312111211")    $("#foundleaf").text("Melilotus albus Medik.");
+else if(result=="323121211")    $("#foundleaf").text("Robinia pseudoacacia L.");
+else if(result=="321111211")    $("#foundleaf").text("Sophora japonica L.");
+else if(result=="321111212")    $("#foundleaf").text("Spartium junceum L.");
+else if(result=="321211211")    $("#foundleaf").text("Trifolium alpinum L.");
+else if(result=="321211211")    $("#foundleaf").text("Trifolium pratense L.");
+else if(result=="321111212")    $("#foundleaf").text("Vicia sativa L.");
+else if(result=="322111211")    $("#foundleaf").text("Wisteria sinensis (Sims) Sweet");
+else if(result=="112131222")    $("#foundleaf").text("Castanea sativa Mill.");
+else if(result=="122231122")    $("#foundleaf").text("Fagus sylvatica L.");
+else if(result=="122131222")    $("#foundleaf").text("Quercus cerris L.");
+else if(result=="112222122")    $("#foundleaf").text("Quercus coccifera L.");
+else if(result=="112131222")    $("#foundleaf").text("Quercus ilex L.");
+else if(result=="222221222")    $("#foundleaf").text("Quercus palustris Münchh.");
+else if(result=="112222222")    $("#foundleaf").text("Quercus petraea Liebl.");
+else if(result=="112212222")    $("#foundleaf").text("Quercus pubescens Willd.");
+else if(result=="122122222")    $("#foundleaf").text("Quercus robur L.");
+else if(result=="222121222")    $("#foundleaf").text("Quercus rubra L.");
+else if(result=="113231222")    $("#foundleaf").text("Quercus suber L.");
+else if(result=="121231222")    $("#foundleaf").text("Aucuba japonica Thunb.");
+else if(result=="123132222")    $("#foundleaf").text("Pyrus communis L.");
+else if(result=="312221111")    $("#foundleaf").text("Rosa canina L.");
+else if(result=="313101111")    $("#foundleaf").text("Rubus idaeus L.");
+else if(result=="112121111")    $("#foundleaf").text("Rubus ulmifolius Schott");
+else if(result=="111132212")    $("#foundleaf").text("Sorbus aria (L.) Crantz");
+else if(result=="313121111")    $("#foundleaf").text("Sorbus aucuparia L.");
+else if(result=="312121211")    $("#foundleaf").text("Sorbus domestica L.");
+else if(result=="113131222")    $("#foundleaf").text("Sorbus intermedia (Ehrh.) Pers.");
+else if(result=="213101121")    $("#foundleaf").text("Sorbus torminalis (L.) Crantz");
+else if(result=="121122221")    $("#foundleaf").text("Citrus limon (L.) Burm.f.");
+else if(result=="321222211")    $("#foundleaf").text("Cneorum tricoccon L.");
+else if(result=="321222221")    $("#foundleaf").text("Ruta montana (L.) L.");
+else if(result=="123231222")    $("#foundleaf").text("Populus alba L.");
+else if(result=="313221221")    $("#foundleaf").text("Populus nigra L.");
+else if(result=="112112211")    $("#foundleaf").text("Populus tremula L.");
+else if(result=="112121111")    $("#foundleaf").text("Populus trichocarpa Torr. & A.Gray ex Hook.");
+else if(result=="112211222")    $("#foundleaf").text("Salix alba L.");
+else if(result=="113121121")    $("#foundleaf").text("Salix caprea L.");
+else if(result=="323111121")    $("#foundleaf").text("Salix cinerea L.");
+else if(result=="112121222")    $("#foundleaf").text("Salix fragilis L.");
+else if(result=="321232111")    $("#foundleaf").text("Viscum album L.");
+else if(result=="221212222")    $("#foundleaf").text("Acer campestre L.");
+else if(result=="222121122")    $("#foundleaf").text("Acer monspessulanum L.");
+else if(result=="311221212")    $("#foundleaf").text("Acer negundo L.");
+else if(result=="222122212")    $("#foundleaf").text("Acer opalus Mill.");
+else if(result=="211201222")    $("#foundleaf").text("Acer palmatum Thunb.");
+else if(result=="211222222")    $("#foundleaf").text("Acer platanoides L.");
+else if(result=="212122222")    $("#foundleaf").text("Acer pseudoplatanus L.");
+else if(result=="211222222")    $("#foundleaf").text("Acer saccharinum L.");
+else if(result=="312122222")    $("#foundleaf").text("Aesculus hippocastanum L.");
+else if(result=="312221211")    $("#foundleaf").text("Koelreuteria paniculata Laxm.");
+else if(result=="121221122")    $("#foundleaf").text("Saxifraga tridactylites L.");
+else if(result=="123221222")    $("#foundleaf").text("Buddleja davidii Franch.");
+else if(result=="123132222")    $("#foundleaf").text("Verbascum blattaria L.");
+else if(result=="123232122")    $("#foundleaf").text("Verbascum boerhavii L.");
+else if(result=="323131211")    $("#foundleaf").text("Ailanthus altissima (Mill.) Swingle");
+else if(result=="123132222")    $("#foundleaf").text("Smilax aspera L.");
+else if(result=="123222222")    $("#foundleaf").text("Datura stramonium L.");
+else if(result=="123112122")    $("#foundleaf").text("Hyoscyamus albus L.");
+else if(result=="323211221")    $("#foundleaf").text("Solanum dulcamara L.");
+else if(result=="123212222")    $("#foundleaf").text("Solanum nigrum L.");
+else if(result=="321221211")    $("#foundleaf").text("Taxus baccata L.");
+else if(result=="123222222")    $("#foundleaf").text("Daphne cneorum L.");
+else if(result=="122122222")    $("#foundleaf").text("Daphne mezereum L.");
+else	 $("#foundleaf").text("No match...");
+		//	alert(result);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
    </script>
   </body>
 </html>
