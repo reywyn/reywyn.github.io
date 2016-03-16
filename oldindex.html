@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LeafSearch</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+         
+		 <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Recognition</a></li>
+           <!-- <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">About this project</a></li>
+            <!--<li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+          </ul> 
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h2>Welcome to LeafSearch!</h2>
+        <p>Please answer the following questions regarding the leaf you are searching for. The system will automatically eliminate unsuitable leaf families.</p>
+        <!-- <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p> -->
+      </div>
+
+	</div> <!-- /container -->
+	
+	
+	
+	
+	<div class ="row">
+		<div class="col-md-offset-2 col-md-4" id="questions">
+		
+		<div class="question panel panel-success" id="q9" hidden>
+			<div class=" panel-heading">Are there any leaflet on the top?</div> <!-- en tepede leaflet -->
+			<div class=" panel-body" id="q9radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="3">
+				N/A
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q9radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+			<div class="question panel panel-success" id="q8" hidden>
+			<div class=" panel-heading">Are the leaflets bilateral ?</div> <!-- leaflets karşılıklı -->
+				<div class=" panel-body" id="q8radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q8radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q8radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q8radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		
+		<div class="question panel panel-success" id="q7" hidden>
+			<div class=" panel-heading">Is the leaf pinnated?</div> <!-- tüylü yaprak -->
+				<div class=" panel-body" id="q7radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q7radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q7radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q7radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q6" hidden>
+			<div class=" panel-heading">Is the tip of the leaf slanted?</div>
+			<div class=" panel-body" id="q6radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q6radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q6radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q6radio" value="0">
+				Not sure?
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q5" hidden>
+			<div class=" panel-heading">Is the leaf shiny?</div>
+			<div class=" panel-body" id="q5radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="1">
+			   Low
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="2">
+			   Medium
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="3">
+				High
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="4">
+				None
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q5radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q4" hidden>
+			<div class=" panel-heading">Are the veins of the leaf bilateral?</div>
+			<div class=" panel-body" id="q4radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q4radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q4radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q4radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q3" hidden >
+			<div class=" panel-heading">Does the leaf have veins?</div>
+			<div class=" panel-body" id="q3radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="1">
+			   Low
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="2">
+			   Medium
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="3">
+				High
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q3radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q2" hidden>
+			<div class=" panel-heading">Is the leaf serrated? </div>
+			<div class=" panel-body" id="q2radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="1">
+			   Yes
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="2">
+			   No
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="3">
+				Low
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q2radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		<div class="question panel panel-success" id="q1">
+			<div class=" panel-heading">Which kind of leaf is it? Simple, Maple or Leaflets?</div>
+			<div class=" panel-body" id="q1radios">
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="1">
+			   Simple
+			  </label>
+
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="2">
+			   Maple
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="3">
+				Leaflets
+			  </label>
+			  <label class ="radio-inline">
+				<input type="radio" name="q1radio" value="0">
+				Not sure
+			</div>
+		</div>
+		
+		
+		
+		
+		</div>
+		
+		<div class ="col-md-4 col-md-offset-1">
+		
+		<div class=" panel panel-warning">
+		
+		<div class=" panel-heading">Possibilities</div>
+		
+		
+		<h3 id="foundleaf"></h3>
+		
+		
+		</div>
+		
+		</div>
+		
+	</div>
+	
+	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+   
+   
+   <script>
+  // var filterDay = $('#filterDay input:radio:checked').val()
+	
+	$('#q9radios input[type=radio]').change( function() {   leaf();    });
+	
+	$('#q8radios input[type=radio]').change( function() {   newQuestion("#q9","#q8");    });
+	$('#q7radios input[type=radio]').change( function() {   newQuestion("#q8","#q7");    });
+	$('#q6radios input[type=radio]').change( function() {   newQuestion("#q7","#q6");    });
+	$('#q5radios input[type=radio]').change( function() {   newQuestion("#q6","#q5");    });
+	$('#q4radios input[type=radio]').change( function() {   newQuestion("#q5","#q4");    });
+	$('#q3radios input[type=radio]').change( function() {   newQuestion("#q4","#q3");    });
+	$('#q2radios input[type=radio]').change( function() {   newQuestion("#q3","#q2");    });
+	$('#q1radios input[type=radio]').change( function() {   newQuestion("#q2","#q1");    });
+	
+	function newQuestion(a, b)
+	{
+		$(a).slideDown(500);
+		$(b).fadeTo(500, 0.65);
+	}
+	
+	function leaf()
+	{
+		var result =  $("#q1 :checked").val() + $("#q2 :checked").val() + $("#q3 :checked").val()
+					+ $("#q4 :checked").val() + $("#q5 :checked").val() + $("#q6 :checked").val() 
+					+ $("#q7 :checked").val() + $("#q8 :checked").val() + $("#q9 :checked").val() ;
+				
+
+		if(result=="310040211")    $("#foundleaf").text("Sambucus ebulus L.");
+		else if(result=="312241211")    $("#foundleaf").text("Sambucus nigra L.");
+		else if(result=="000000200")    $("#foundleaf").text("Sambucus racemosa L.");
+		else if(result=="113142223")    $("#foundleaf").text("Viburnum lantana L.");
+		else if(result=="223221222")    $("#foundleaf").text("Viburnum opulus L.");
+		else if(result=="133242200")    $("#foundleaf").text("Viburnum rhytidophyllum Hemsl. ex F.B.Forbes & Hemsl.");
+		else if(result=="122221223")    $("#foundleaf").text("Viburnum tinus L.");
+		else if(result=="213212223")    $("#foundleaf").text("Liquidambar styraciflua L.");
+		else if(result=="123211222")    $("#foundleaf").text("Amaranthus deflexus L.");
+		else if(result=="221231222")    $("#foundleaf").text("Atriplex prostrata Boucher ex DC.");
+		else if(result=="123131222")    $("#foundleaf").text("Beta vulgaris L.");
+		else if(result=="121112222")    $("#foundleaf").text("Chenopodium album L.");
+		else if(result=="121221222")    $("#foundleaf").text("Allium ursinum L.");
+		else if(result=="121211222")    $("#foundleaf").text("Galanthus nivalis L.");
+		else if(result=="123112222")    $("#foundleaf").text("Cotinus coggygria Scop.");
+		else if(result=="321122212")    $("#foundleaf").text("Pistacia lentiscus L.");
+		else if(result=="323231211")    $("#foundleaf").text("Pistacia terebinthus L.");
+		else if(result=="313121211")    $("#foundleaf").text("Rhus coriaria L.");
+		else if(result=="313231211")    $("#foundleaf").text("Rhus typhina L.");
+		else if(result=="213121222")    $("#foundleaf").text("Aegopodium podagraria L.");
+		else if(result=="311211211")    $("#foundleaf").text("Anthriscus sylvestris (L.) Hoffm.");
+		else if(result=="211221222")    $("#foundleaf").text("Astrantia minor L.");
+		else if(result=="321112221")    $("#foundleaf").text("Bupleurum fruticosum L.");
+		else if(result=="311221211")    $("#foundleaf").text("Daucus carota L.");
+		else if(result=="311122211")    $("#foundleaf").text("Pastinaca sativa L.");
+		else if(result=="313131211")    $("#foundleaf").text("Smyrnium olusatrum L.");
+		else if(result=="321211211")    $("#foundleaf").text("Nerium oleander L.");
+		else if(result=="121121222")    $("#foundleaf").text("Vinca major L.");
+		else if(result=="111131222")    $("#foundleaf").text("Ilex aquifolium L.");
+		else if(result=="123131222")    $("#foundleaf").text("Arum italicum Mill.");
+		else if(result=="123111222")    $("#foundleaf").text("Dracunculus vulgaris Schott");
+		else if(result=="223121222")    $("#foundleaf").text("Hedera helix L.");
+		else if(result=="122122222")    $("#foundleaf").text("Aristolochia clematitis L.");
+		else if(result=="321221221")    $("#foundleaf").text("Ruscus aculeatus L.");
+		else if(result=="121131222")    $("#foundleaf").text("Asplenium scolopendrium L.");
+		else if(result=="321222211")    $("#foundleaf").text("Asplenium trichomanes L.");
+		else if(result=="321112211")    $("#foundleaf").text("Ambrosia artemisiifolia L.");
+		else if(result=="321211211")    $("#foundleaf").text("Anacyclus clavatus (Desf.) Pers.");
+		else if(result=="311221221")    $("#foundleaf").text("Anthemis maritima L.");
+		else if(result=="221111222")    $("#foundleaf").text("Artemisia vulgaris L.");
+		else if(result=="112111222")    $("#foundleaf").text("Bidens pilosa L.");
+		else if(result=="121211222")    $("#foundleaf").text("Calendula arvensis L.");
+		else if(result=="313131211")    $("#foundleaf").text("Carduus acanthoides L.");
+		else if(result=="121111122")    $("#foundleaf").text("Centaurea aspera L.");
+		else if(result=="311111121")    $("#foundleaf").text("Centaurea calcitrapa L.");
+		else if(result=="313211211")    $("#foundleaf").text("Centaurea scabiosa L.");
+		else if(result=="111131222")    $("#foundleaf").text("Cichorium intybus L.");
+		else if(result=="111211122")    $("#foundleaf").text("Cirsium arvense (L.) Scop.");
+		else if(result=="312111121")    $("#foundleaf").text("Crepis bursifolia L.");
+		else if(result=="321111211")    $("#foundleaf").text("Crepis capillaris (L.) Wallr.");
+		else if(result=="111231222")    $("#foundleaf").text("Erigeron canadensis L.");
+		else if(result=="121131222")    $("#foundleaf").text("Erigeron karvinskianus DC.");
+		else if(result=="112131222")    $("#foundleaf").text("Eupatorium cannabinum L.");
+		else if(result=="311131211")    $("#foundleaf").text("Galactites tomentosus Moench");
+		else if(result=="113222122")    $("#foundleaf").text("Helminthotheca echioides (L.) Holub");
+		else if(result=="213132222")    $("#foundleaf").text("Homogyne alpina (L.) Cass.");
+		else if(result=="321122111")    $("#foundleaf").text("Hypochaeris radicata L.");
+		else if(result=="323222211")    $("#foundleaf").text("Jacobaea erucifolia (L.) P.Gaertn., B.Mey. & Scherb.");
+		else if(result=="313212211")    $("#foundleaf").text("Jacobaea vulgaris Gaertn.");
+		else if(result=="313111221")    $("#foundleaf").text("Lactuca serriola L.");
+		else if(result=="311212121")    $("#foundleaf").text("Lactuca viminea (L.) J.Presl & C.Presl");
+		else if(result=="111221122")    $("#foundleaf").text("Leontodon hispidus L.");
+		else if(result=="311212111")    $("#foundleaf").text("Leucanthemum vulgare Lam.");
+		else if(result=="223122222")    $("#foundleaf").text("Petasites pyrenaicus (L.) G.López");
+		else if(result=="121121122")    $("#foundleaf").text("Pilosella officinarum F.W.Schultz & Sch.Bip.");
+		else if(result=="111231122")    $("#foundleaf").text("Scorzoneroides pyrenaica (Gouan) Holub");
+		else if(result=="111121122")    $("#foundleaf").text("Senecio vulgaris L.");
+		else if(result=="113231222")    $("#foundleaf").text("Sonchus asper (L.) Hill");
+		else if(result=="112121222")    $("#foundleaf").text("Sonchus tenerrimus L.");
+		else if(result=="311111211")    $("#foundleaf").text("Tanacetum vulgare L.");
+		else if(result=="311221221")    $("#foundleaf").text("Taraxacum campylodes G.E.Haglund");
+		else if(result=="121111222")    $("#foundleaf").text("Tragopogon pratensis L.");
+		else if(result=="311211221")    $("#foundleaf").text("Tripleurospermum inodorum Sch.Bip.");
+		else if(result=="212132222")    $("#foundleaf").text("Tussilago farfara L.");
+		else if(result=="113121222")    $("#foundleaf").text("Impatiens glandulifera Royle");
+		else if(result=="113231122")    $("#foundleaf").text("Alnus alnobetula (Ehrh.) K.Koch");
+		else if(result=="123131222")    $("#foundleaf").text("Alnus cordata (Loisel.) Duby");
+		else if(result=="113132222")    $("#foundleaf").text("Alnus glutinosa (L.) Gaertn.");
+		else if(result=="113131122")    $("#foundleaf").text("Betula pendula Roth");
+		else if(result=="113131122")    $("#foundleaf").text("Betula pubescens Ehrh.");
+		else if(result=="113121222")    $("#foundleaf").text("Betula utilis D.Don");
+		else if(result=="113131222")    $("#foundleaf").text("Carpinus betulus L.");
+		else if(result=="113231222")    $("#foundleaf").text("Corylus avellana L.");
+		else if(result=="113121122")    $("#foundleaf").text("Ostrya carpinifolia Scop.");
+		else if(result=="123211222")    $("#foundleaf").text("Catalpa bignonioides Walter");
+		else if(result=="113111122")    $("#foundleaf").text("Borago officinalis L.");
+		else if(result=="321231221")    $("#foundleaf").text("Lithodora fruticosa (L.) Griseb.");
+		else if(result=="121222122")    $("#foundleaf").text("Myosotis arvensis Hill");
+		else if(result=="321211111")    $("#foundleaf").text("Phacelia tanacetifolia Benth.");
+		else if(result=="123211222")    $("#foundleaf").text("Symphytum officinale L.");
+		else if(result=="113132222")    $("#foundleaf").text("Barbarea vulgaris R.Br.");
+		else if(result=="111112222")    $("#foundleaf").text("Cakile maritima Scop.");
+		else if(result=="321212222")    $("#foundleaf").text("Capsella bursa-pastoris (L.) Medik.");
+		else if(result=="321122211")    $("#foundleaf").text("Cardamine amara L.");
+		else if(result=="321112111")    $("#foundleaf").text("Cardamine pratensis L.");
+		else if(result=="311111211")    $("#foundleaf").text("Diplotaxis erucoides (L.) DC.");
+		else if(result=="311111211")    $("#foundleaf").text("Diplotaxis tenuifolia (L.) DC.");
+		else if(result=="111231122")    $("#foundleaf").text("Draba verna L.");
+		else if(result=="113131222")    $("#foundleaf").text("Lunaria annua L.");
+		else if(result=="212110222")    $("#foundleaf").text("Sinapis arvensis L.");
+		else if(result=="121111222")    $("#foundleaf").text("Sisymbrium irio L.");
+		else if(result=="111111222")    $("#foundleaf").text("Sisymbrium officinale (L.) Scop.");
+		else if(result=="121232222")    $("#foundleaf").text("Buxus sempervirens L.");
+		else if(result=="113121222")    $("#foundleaf").text("Celtis australis L.");
+		else if(result=="112111222")    $("#foundleaf").text("Humulus lupulus L.");
+		else if(result=="122211222")    $("#foundleaf").text("Capparis spinosa L.");
+		else if(result=="121121222")    $("#foundleaf").text("Centranthus ruber (L.) DC.");
+		else if(result=="321221211")    $("#foundleaf").text("Knautia arvensis (L.) Coult.");
+		else if(result=="112212222")    $("#foundleaf").text("Scabiosa atropurpurea L.");
+		else if(result=="121211222")    $("#foundleaf").text("Silene latifolia Poir.");
+		else if(result=="112121222")    $("#foundleaf").text("Euonymus europaeus L.");
+		else if(result=="123212122")    $("#foundleaf").text("Cistus albidus L.");
+		else if(result=="112221122")    $("#foundleaf").text("Convolvulus althaeoides L.");
+		else if(result=="123212222")    $("#foundleaf").text("Convolvulus arvensis L.");
+		else if(result=="122231222")    $("#foundleaf").text("Cornus mas L.");
+		else if(result=="122121222")    $("#foundleaf").text("Cornus sanguinea L.");
+		else if(result=="223121222")    $("#foundleaf").text("Bryonia cretica L.");
+		else if(result=="121231222")    $("#foundleaf").text("Juniperus communis L.");
+		else if(result=="121231222")    $("#foundleaf").text("Juniperus oxycedrus L.");
+		else if(result=="311211221")    $("#foundleaf").text("Pteridium aquilinum (L.) Kuhn");
+		else if(result=="311111211")    $("#foundleaf").text("Dryopteris filix-mas (L.) Schott");
+		else if(result=="311221221")    $("#foundleaf").text("Polystichum setiferum (Forssk.) T.Moore ex Woyn.");
+		else if(result=="123221222")    $("#foundleaf").text("Diospyros kaki L.f.");
+		else if(result=="121111122")    $("#foundleaf").text("Elaeagnus angustifolia L.");
+		else if(result=="321212212")    $("#foundleaf").text("Ephedra distachya L.");
+		else if(result=="112111222")    $("#foundleaf").text("Arbutus unedo L.");
+		else if(result=="121211222")    $("#foundleaf").text("Euphorbia characias L.");
+		else if(result=="112221122")    $("#foundleaf").text("Mercurialis annua L.");
+		else if(result=="321212211")    $("#foundleaf").text("Acacia dealbata Link");
+		else if(result=="321212212")    $("#foundleaf").text("Albizia julibrissin Durazz.");
+		else if(result=="321111211")    $("#foundleaf").text("Amorpha fruticosa L.");
+		else if(result=="321111211")    $("#foundleaf").text("Astragalus monspessulanus L.");
+		else if(result=="122131222")    $("#foundleaf").text("Bituminaria bituminosa (L.) C.H.Stirt.");
+		else if(result=="112132222")    $("#foundleaf").text("Ceratonia siliqua L.");
+		else if(result=="123221222")    $("#foundleaf").text("Cercis siliquastrum L.");
+		else if(result=="122112222")    $("#foundleaf").text("Colutea arborescens L.");
+		else if(result=="121112222")    $("#foundleaf").text("Coronilla valentina L.");
+		else if(result=="321131212")    $("#foundleaf").text("Gleditsia triacanthos L.");
+		else if(result=="121112222")    $("#foundleaf").text("Laburnum anagyroides Medik.");
+		else if(result=="121211222")    $("#foundleaf").text("Lathyrus cicera L.");
+		else if(result=="121211222")    $("#foundleaf").text("Lathyrus latifolius L.");
+		else if(result=="121212222")    $("#foundleaf").text("Lotus corniculatus L.");
+		else if(result=="121211122")    $("#foundleaf").text("Medicago arborea L.");
+		else if(result=="121211122")    $("#foundleaf").text("Medicago lupulina L.");
+		else if(result=="312111211")    $("#foundleaf").text("Melilotus albus Medik.");
+		else if(result=="323121211")    $("#foundleaf").text("Robinia pseudoacacia L.");
+		else if(result=="321111211")    $("#foundleaf").text("Sophora japonica L.");
+		else if(result=="321111212")    $("#foundleaf").text("Spartium junceum L.");
+		else if(result=="321211211")    $("#foundleaf").text("Trifolium alpinum L.");
+		else if(result=="321211211")    $("#foundleaf").text("Trifolium pratense L.");
+		else if(result=="321111212")    $("#foundleaf").text("Vicia sativa L.");
+		else if(result=="322111211")    $("#foundleaf").text("Wisteria sinensis (Sims) Sweet");
+		else if(result=="112131222")    $("#foundleaf").text("Castanea sativa Mill.");
+		else if(result=="122231122")    $("#foundleaf").text("Fagus sylvatica L.");
+		else if(result=="122131222")    $("#foundleaf").text("Quercus cerris L.");
+		else if(result=="112222122")    $("#foundleaf").text("Quercus coccifera L.");
+		else if(result=="112131222")    $("#foundleaf").text("Quercus ilex L.");
+		else if(result=="222221222")    $("#foundleaf").text("Quercus palustris Münchh.");
+		else if(result=="112222222")    $("#foundleaf").text("Quercus petraea Liebl.");
+		else if(result=="112212222")    $("#foundleaf").text("Quercus pubescens Willd.");
+		else if(result=="122122222")    $("#foundleaf").text("Quercus robur L.");
+		else if(result=="222121222")    $("#foundleaf").text("Quercus rubra L.");
+		else if(result=="113231222")    $("#foundleaf").text("Quercus suber L.");
+		else if(result=="121231222")    $("#foundleaf").text("Aucuba japonica Thunb.");
+		else if(result=="123132222")    $("#foundleaf").text("Pyrus communis L.");
+		else if(result=="312221111")    $("#foundleaf").text("Rosa canina L.");
+		else if(result=="313101111")    $("#foundleaf").text("Rubus idaeus L.");
+		else if(result=="112121111")    $("#foundleaf").text("Rubus ulmifolius Schott");
+		else if(result=="111132212")    $("#foundleaf").text("Sorbus aria (L.) Crantz");
+		else if(result=="313121111")    $("#foundleaf").text("Sorbus aucuparia L.");
+		else if(result=="312121211")    $("#foundleaf").text("Sorbus domestica L.");
+		else if(result=="113131222")    $("#foundleaf").text("Sorbus intermedia (Ehrh.) Pers.");
+		else if(result=="213101121")    $("#foundleaf").text("Sorbus torminalis (L.) Crantz");
+		else if(result=="121122221")    $("#foundleaf").text("Citrus limon (L.) Burm.f.");
+		else if(result=="321222211")    $("#foundleaf").text("Cneorum tricoccon L.");
+		else if(result=="321222221")    $("#foundleaf").text("Ruta montana (L.) L.");
+		else if(result=="123231222")    $("#foundleaf").text("Populus alba L.");
+		else if(result=="313221221")    $("#foundleaf").text("Populus nigra L.");
+		else if(result=="112112211")    $("#foundleaf").text("Populus tremula L.");
+		else if(result=="112121111")    $("#foundleaf").text("Populus trichocarpa Torr. & A.Gray ex Hook.");
+		else if(result=="112211222")    $("#foundleaf").text("Salix alba L.");
+		else if(result=="113121121")    $("#foundleaf").text("Salix caprea L.");
+		else if(result=="323111121")    $("#foundleaf").text("Salix cinerea L.");
+		else if(result=="112121222")    $("#foundleaf").text("Salix fragilis L.");
+		else if(result=="321232111")    $("#foundleaf").text("Viscum album L.");
+		else if(result=="221212222")    $("#foundleaf").text("Acer campestre L.");
+		else if(result=="222121122")    $("#foundleaf").text("Acer monspessulanum L.");
+		else if(result=="311221212")    $("#foundleaf").text("Acer negundo L.");
+		else if(result=="222122212")    $("#foundleaf").text("Acer opalus Mill.");
+		else if(result=="211201222")    $("#foundleaf").text("Acer palmatum Thunb.");
+		else if(result=="211222222")    $("#foundleaf").text("Acer platanoides L.");
+		else if(result=="212122222")    $("#foundleaf").text("Acer pseudoplatanus L.");
+		else if(result=="211222222")    $("#foundleaf").text("Acer saccharinum L.");
+		else if(result=="312122222")    $("#foundleaf").text("Aesculus hippocastanum L.");
+		else if(result=="312221211")    $("#foundleaf").text("Koelreuteria paniculata Laxm.");
+		else if(result=="121221122")    $("#foundleaf").text("Saxifraga tridactylites L.");
+		else if(result=="123221222")    $("#foundleaf").text("Buddleja davidii Franch.");
+		else if(result=="123132222")    $("#foundleaf").text("Verbascum blattaria L.");
+		else if(result=="123232122")    $("#foundleaf").text("Verbascum boerhavii L.");
+		else if(result=="323131211")    $("#foundleaf").text("Ailanthus altissima (Mill.) Swingle");
+		else if(result=="123132222")    $("#foundleaf").text("Smilax aspera L.");
+		else if(result=="123222222")    $("#foundleaf").text("Datura stramonium L.");
+		else if(result=="123112122")    $("#foundleaf").text("Hyoscyamus albus L.");
+		else if(result=="323211221")    $("#foundleaf").text("Solanum dulcamara L.");
+		else if(result=="123212222")    $("#foundleaf").text("Solanum nigrum L.");
+		else if(result=="321221211")    $("#foundleaf").text("Taxus baccata L.");
+		else if(result=="123222222")    $("#foundleaf").text("Daphne cneorum L.");
+		else if(result=="122122222")    $("#foundleaf").text("Daphne mezereum L.");
+		else	 $("#foundleaf").text("No match...");
+				//	alert(result);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   </script>
+  </body>
+</html>
